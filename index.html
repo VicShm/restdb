@@ -64,7 +64,7 @@
 			$.getJSON('https://dartsscore-a9ee.restdb.io/rest/pairs', function(data){
 				$.each(data, function(item){
 					console.log(item);
-					$('#content').append(makeHtmlItem(item));
+					$('#content').append(makeHtmlItem('item'));
 				});
 			});
 		});
