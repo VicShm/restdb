@@ -62,7 +62,7 @@
 				Sort by _id in reverse order, i.e. newest first
 			*/
 			$.getJSON('https://dartsscore-a9ee.restdb.io/rest/pairs', function(data){
-				$.each(data, function(key, item){
+				$.each(data, function(item){
 					console.log(item);
 					$('#content').append(makeHtmlItem(item));
 				});
