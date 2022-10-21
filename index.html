@@ -18,7 +18,7 @@
 			$.ajaxPrefilter(function( options ) {
 				if ( !options.beforeSend) {
 					options.beforeSend = function (xhr) {
-						xhr.setRequestHeader('x-apikey', '569a2b87566759cf4b984a50');
+						xhr.setRequestHeader('x-apikey', '4ab4e481889885fb4efdcd5760d7ddbb0ef53');
 					}
 				}
 			});
@@ -61,7 +61,7 @@
 				GET 5 records from contact Collection.
 				Sort by _id in reverse order, i.e. newest first
 			*/
-			$.getJSON('https://rdb-simpledb.restdb.io/rest/contact?max=5&sort=_id&dir=-1', function(data){
+			$.getJSON('https://dartsscore-a9ee.restdb.io/rest/pairs', function(data){
 				$.each(data, function(key, item){
 					console.log(item);
 					$('#content').append(makeHtmlItem(item));
